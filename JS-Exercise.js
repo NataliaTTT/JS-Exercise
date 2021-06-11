@@ -94,3 +94,21 @@ let remove = secretMessage.slice(6, 11);
 let replace = secretMessage.splice(6, 5, "know,");
 console.log(secretMessage.join(" ")); //Programming is not about what you know, it is about what you can figure out. -2015, Chris Pine, Learn to Program
 
+//JS Exercise 3 - Whale Talk
+
+const inputString = "Just because it's over doesn't mean it's really over";
+const vowels = ["a", "e", "i", "o", "u"];
+resultArray = [];
+for (let i = 0; i < inputString.length; i++) {
+  for (let j = 0; j < vowels.length; j++) {
+    if (inputString[i] === vowels[j]) {
+      if (inputString[i] === "e" || inputString[i] === "u") {
+        resultArray.push(inputString[i] + inputString[i]);
+      } else {
+        resultArray.push(inputString[i]);
+      }
+    }
+  }
+}
+console.log(resultArray.join("").toUpperCase());//UUEEAUUEEIOEEOEEEEAIEEAOEE
+
