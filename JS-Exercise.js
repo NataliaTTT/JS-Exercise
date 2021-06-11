@@ -49,3 +49,48 @@ const name2 = "Warren";
 
 logEvent(name2, event2);
 logTime(name2, days2);
+
+//JS Exercise 2 - Secret Message
+let secretMessage = [
+  "Learning",
+  "is",
+  "not",
+  "about",
+  "what",
+  "you",
+  "get",
+  "easily",
+  "the",
+  "first",
+  "time,",
+  "it",
+  "is",
+  "about",
+  "what",
+  "you",
+  "can",
+  "figure",
+  "out.",
+  "-2015,",
+  "Chris",
+  "Pine,",
+  "Learn",
+  "JavaScript",
+];
+console.log(secretMessage.length);
+let last = secretMessage.pop();
+console.log(secretMessage.length);
+let newLength = secretMessage.push("to", "Program");
+console.log(secretMessage.length);
+console.log(secretMessage.indexOf("easily"));
+secretMessage[7] = "right";
+let first = secretMessage.shift();
+console.log(secretMessage.length);
+let newLength1 = secretMessage.unshift("Programming");
+console.log(secretMessage.length);
+console.log(secretMessage.indexOf("get"));
+console.log(secretMessage.indexOf("time,"));
+let remove = secretMessage.slice(6, 11);
+let replace = secretMessage.splice(6, 5, "know,");
+console.log(secretMessage.join(" ")); //Programming is not about what you know, it is about what you can figure out. -2015, Chris Pine, Learn to Program
+
